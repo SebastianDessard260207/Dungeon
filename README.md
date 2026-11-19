@@ -1,10 +1,10 @@
 # Airport Dungeon
 
-A dungeon game where four passengers try to reach their gate while the airport
-fights back. Every character is an agent: it decides by itself what to do, and
+This is a dungeon game where 4 passengers try to reach the gate while the airport
+fights back. Every character is an agent, they decide by itself what to do, and
 it only knows what it can see or what it was told.
 
-This was a challenge for our university programming course (Dungeons Challenge).
+This was a challenge for Breda University of Applied Science programming course (End of the block challenge).
 
 ## How to run
 
@@ -12,7 +12,7 @@ You need Python 3.9 or newer. The game itself does not need to install anything.
 
 ```
 python airport.py          # watch one game in the terminal
-python airport.py 5        # watch the game with seed 5 (same seed = same game)
+python airport.py 5        # watch the game with seed 5 
 python airport.py 5 off     # same seed, but the commander is OFF
 python airport.py bench    # run 100 games with commander ON and 100 with OFF
 ```
@@ -35,20 +35,19 @@ is a timeout (counts as a loss for the passengers).
 
 ### Passengers (no commander)
 
-| Agent | What it does |
-|---|---|
-| Backpacker | Tank with lots of HP. Runs towards enemies and never flees. |
-| Flight Attendant | Heals friends that are close to her. Stays near the group. |
-| Business Guy | Hits hard. If he is hurt and sees a guard he can get bribed and **betray** the team. |
-| Tourist | Attacks from 3 tiles away and sees farther (6 tiles). |
+Agents:
+
+Backpacker: They tank with a lot of HP. Runs towards enemies and never flees. 
+Flight Attendant: They heal friends that are close to her. Stays near the group. 
+Business Guy: They hit hard. If he is hurt and sees a guard he can get bribed and betray the team. 
+Tourist: They attack from 3 tiles away and sees farther (6 tiles). 
 
 ### Airport (with a commander)
 
-| Agent | What it does |
-|---|---|
-| Security Guard x3 | Obeys orders most of the time (90%). |
-| Runaway Suitcase x3 | Stubborn, obeys only 60% of the time. |
-| Voice on the Speaker | The **commander**. It does not move, and it gives orders. |
+Agent:
+Security Guard x3 : Obeys orders most of the time (90%). 
+Runaway Suitcase x3 : Stubborn, obeys only 60% of the time. 
+Voice on the Speaker : The commander. It does not move, and it gives orders. 
 
 ## How the agents work
 
