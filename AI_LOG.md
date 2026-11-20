@@ -22,7 +22,7 @@ The commander made no measurable difference (55% vs 49%, 21 seeds won only with
 the commander and 15 only without). We reported it as it came out and did not
 tune the commander to make it look better.
 
-## TODO (each person fills this in)
+## TODO
 
 - Sebastian Dessard: I mainly worked on pulling and pushing documents to the repo, I worked together with Dion and Claude trying to always give the best ideas and giving my honest opinion of what we were doing. I corrected some problems we encountered during the coding and ejecution of the project. My main task was making good prompts for Claude to let her help us in the best way possible, I needed to read every requirement the challenge has to meet so we can have the best score possible.
 - Dion Van Den Haak: I created the Repo for this project, I was in charge of inviting my peer to the github repository and the one who gave instructions of the tasks that we needed to complete, also I was checking that the work met the requirements to get a good grade. Me and Sebastian worked with Claude and decided which idea was good and what we should keep from them and what things to throw away.
